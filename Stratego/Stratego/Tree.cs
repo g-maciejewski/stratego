@@ -8,5 +8,18 @@ namespace Stratego
 {
     class Tree
     {
+        Node Root { get; set; }
+
+        Tree(Node root)
+        {Root = root;}
+
+        public void PostOrder(Node node)
+        {
+            foreach (var n in node.getChildrens())
+                PostOrder(n);
+
+            //Cos się dzieje
+        }
+
     }
 }
