@@ -12,5 +12,7 @@ namespace Stratego
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

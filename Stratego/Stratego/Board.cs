@@ -8,22 +8,28 @@ namespace Stratego
 {
     class Board
     {
-        int[,] board;
+        public int[,] GameBoard { get; set; }
 
-        public Board(int n) {
-            board = new int[n,n];
+        public Board(int n)
+        {
+            GameBoard = new int[n, n];
         }
 
-        public int GetPointsForMove(int lastChoiceColumn, int lastChoiceRow) {
-            
+        public Board()
+        {
+         
         }
 
-        public bool[,] GetAvaliableMoves() {
-            bool[,] result = new bool[board.GetLength(0), board.GetLength(1)];
 
-            for (int i = 0; i < board.GetLength(0); i++) {
-                for (int j = 0; j < board.GetLength(1); j++) {
-                    result[i, j] = board[i, j] == 0;
+        public bool[,] GetAvaliableMoves()
+        {
+            bool[,] result = new bool[GameBoard.GetLength(0), GameBoard.GetLength(1)];
+
+            for (int i = 0; i < GameBoard.GetLength(0); i++)
+            {
+                for (int j = 0; j < GameBoard.GetLength(1); j++)
+                {
+                    result[i, j] = GameBoard[i, j] == 0;
                 }
             }
 

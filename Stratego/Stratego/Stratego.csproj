@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Algorithm\AlphaBetaPruning.cs" />
     <Compile Include="Algorithm\IAlgorithm.cs" />
+    <Compile Include="Board.cs" />
     <Compile Include="GameState\IGameStateHeur.cs" />
     <Compile Include="NodeChoice\INodeChoiceHeur.cs" />
     <Compile Include="Algorithm\Minmax.cs" />

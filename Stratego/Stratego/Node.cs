@@ -8,20 +8,28 @@ namespace Stratego
 {
     class Node
     {
-        int Value { get; set; }
+        Tuple<int, int> Position { get; set; }
         int Alpha { get; set; }
         int Beta { get; set; }
         private List<Node> childs;
-
-        Node(int v, List<Node> childrens)
+        public Node(int v, List<Node> childrens)
         {
             Value = v;
             childs = childrens;
+        }
+        
+        public Node()
+        {
+            childs = new List<Node>();
         }
 
         public List<Node> getChildrens()
         {return childs;}
 
+        public void addChild(Node child)
+        {
+            childs.Add(child);
+        }
 
     }
 }
