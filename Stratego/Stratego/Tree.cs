@@ -8,12 +8,12 @@ namespace Stratego
 {
     class Tree
     {
-        Node Root { get; set; }
+        public Node Root { get; set; }
 
-        Tree(Node root)
+        public Tree(Node root)
         {Root = root;}
 
-        Tree(int depth, Board board)
+        public Tree(int depth, Board board)
         {
             Root = new Node();
             createTree(board, depth, Root);
@@ -23,8 +23,7 @@ namespace Stratego
         {
             foreach (var n in node.getChildrens())
                 PostOrder(n);
-
-            //Cos się dzieje
+            Console.WriteLine(n.)
         }
 
         private void createTree(Board board,int depth,Node parent)

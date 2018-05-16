@@ -8,7 +8,7 @@ namespace Stratego
 {
     class Node
     {
-        Tuple<int, int> Position { get; set; }
+        public Tuple<int, int> Position { get; set; }
         int Alpha { get; set; }
         int Beta { get; set; }
         private List<Node> childs;
