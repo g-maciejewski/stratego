@@ -14,7 +14,7 @@ namespace Stratego
         private List<Node> childs;
         public Node(int v, List<Node> childrens)
         {
-            Value = v;
+            //Value = v;
             childs = childrens;
         }
         

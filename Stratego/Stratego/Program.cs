@@ -10,8 +10,14 @@ namespace Stratego
     {
         static void Main(string[] args)
         {
-            Board board = new Board(3);
-            Tree t = new Tree(3, board);
+            Board board = new Board(2);
+            Tree t = new Tree(2, board);
+
+            Console.WriteLine("zakonczono");
+
+            t.PostOrder(t.Root);
+
+            Console.WriteLine("zakonczono2");
         }
     }
 }
